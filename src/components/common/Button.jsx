@@ -1,7 +1,13 @@
+/* eslint-disable react/prop-types */
 import { cn } from "~/lib/utils";
 
-// eslint-disable-next-line react/prop-types
-const Button = ({ children, className, onClick, type = "button" }) => {
+const Button = ({
+  children,
+  className,
+  onClick,
+  type = "button",
+  disabled = false,
+}) => {
   return (
     <button
       type={type}
@@ -9,6 +15,7 @@ const Button = ({ children, className, onClick, type = "button" }) => {
         "py-3 px-6 text-white bg-primary-700 rounded-md",
         className
       )}
+      disabled={disabled}
       onClick={onClick}
     >
       {children}

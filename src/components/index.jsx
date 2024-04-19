@@ -5,3 +5,4 @@ export { default as Button } from "./common/Button";
 export { default as Modal } from "./common/Modal";
 export { default as Banner } from "./banner/Banner";
 export { default as Logo } from "./common/Logo";
+export { default as Input } from "./inputs/Input";
