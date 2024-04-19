@@ -3,6 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        Dancing: ["Dancing Script"],
+      },
       backgroundColor: {
         primary: {
           50: "#EDEFF6",
@@ -16,6 +19,7 @@ export default {
           800: "#1E2640",
           900: "#0F1320",
         },
+        overlay: "rgba(0, 0, 0, 0.35)",
       },
       colors: {
         primary: {
