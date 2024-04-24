@@ -1,5 +1,5 @@
-/* eslint-disable react/prop-types */
 import { cn } from "~/lib/utils";
+import PropTypes from "prop-types";
 
 const Button = ({
   children,
@@ -21,6 +21,14 @@ const Button = ({
       {children}
     </button>
   );
+};
+
+Button.propTypes = {
+  children: PropTypes.any,
+  className: PropTypes.string,
+  onClick: PropTypes.func,
+  type: PropTypes.oneOf(["button", "submit", "reset"]),
+  disabled: PropTypes.bool,
 };
 
 export default Button;
